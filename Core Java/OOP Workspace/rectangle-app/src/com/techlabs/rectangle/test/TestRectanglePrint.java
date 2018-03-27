@@ -23,7 +23,7 @@ public class TestRectanglePrint {
 		
 		temp = null;
 		System.out.println(rect1.getHeight());
-		System.out.println(temp.getHeight());
+		//System.out.println(temp.getHeight());
 		
 	}
 
