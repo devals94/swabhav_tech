@@ -8,12 +8,17 @@ public class SavingsAccount extends Account {
 
 	@Override
 	public void withdraw(float amountToWithdraw) {
-
-		if (this.balance - amountToWithdraw < 1000) {
-			System.out
-					.println("Cannot Withdraw.Violates Minimum Balance Condition of Rs 1000/-");
-		} else
-			this.balance = this.balance - amountToWithdraw;
+		try {
+			if (this.balance - amountToWithdraw < 1000) {
+				// System.out.println("Cannot Withdraw.Violates Minimum Balance Condition of Rs 1000/-");
+				RuntimeException re = new RuntimeException(
+						"Cannot Withdraw.Violates Minimum Balance Condition of Rs 1000/-");
+				throw re;
+			} else
+				this.balance = this.balance - amountToWithdraw;
+		} catch (RuntimeException e) {
+			System.out.println(e);
+		}
 	}
 
 }
