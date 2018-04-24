@@ -9,15 +9,26 @@ public class CurrentAccount extends Account {
 	@Override
 	public void withdraw(float balance) {
 		float amount = 0.0f;
-		if (getBalance() > -5000) {
-			amount = this.balance - balance;
-			if (amount < -5000) {
-				System.out.println("Insufficient balance");
+		try {
+			if (getBalance() > -5000) {
+				amount = this.balance - balance;
+				if (amount < -5000) {
+					// System.out.println("Insufficient balance");
+					RuntimeException re = new RuntimeException(
+							"Insufficient Balance");
+					throw re;
+
+				} else {
+					this.balance -= balance;
+				}
 			} else {
-				this.balance -= balance;
+				// System.out.println("Insufficient balance");
+				RuntimeException re = new RuntimeException(
+						"Insufficient Balance");
+				throw re;
 			}
-		} else {
-			System.out.println("Insufficient balance");
+		} catch (RuntimeException e) {
+			System.out.println(e);
 		}
 	}
 
