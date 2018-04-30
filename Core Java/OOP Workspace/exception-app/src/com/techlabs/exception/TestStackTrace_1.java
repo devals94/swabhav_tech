@@ -1,13 +1,13 @@
 package com.techlabs.exception;
 
-public class TestStackTrace {
+public class TestStackTrace_1 {
 	public static void main(String[] args) {
 		try {
 			m1();
 		} catch (Exception e) {
-			
-			System.out.println(e);
 			e.printStackTrace();
+			System.out.println(e);
+			
 		}
 		System.out.println("End of main");
 	}
