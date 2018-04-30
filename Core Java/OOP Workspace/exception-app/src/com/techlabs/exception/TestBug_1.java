@@ -1,6 +1,6 @@
 package com.techlabs.exception;
 
-public class TestBug {
+public class TestBug_1 {
 	public static void main(String[] args) {
 		try{
 		int a = Integer.parseInt(args[0]);
