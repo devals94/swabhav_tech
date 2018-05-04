@@ -38,7 +38,7 @@ public class Account {
 	}
 
 	public void withdraw(double balance) {
-		if ((this.balance - 500) <= 500) {
+		if ((this.balance - balance) <= 500) {
 			System.out.println("Cannot withdraw to maintain minimum balance");
 			return;
 		}
