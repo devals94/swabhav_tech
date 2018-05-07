@@ -1,8 +1,8 @@
 package com.techlabs.circle;
 
 public class Circle {
-	private float radius;
-	private String color;
+	private float radius = 0.1f;
+	private String color = "Red";
 
 	public Circle(float radius, String color) {
 		if ((radius > 0
