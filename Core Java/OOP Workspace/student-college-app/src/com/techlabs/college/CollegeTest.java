@@ -27,13 +27,13 @@ public class CollegeTest {
 			System.out.print("\tBranch:" + s.getBranch() + "\n");
 		}
 		System.out.println("\nTotal Professors:" + professors.size());
-		college.calculateSalary(professors);
+		
 		for (Professor p : professors) {
 			System.out.print("ID:" + p.getId());
 			System.out.print("\tAddress:" + p.getAddress());
 			System.out.print("\tDOB:" + p.getDateOfBirth());
 			System.out.print("\tWorking Hours:" + p.getNoOfHoursWorked());
-			System.out.println("\tSalary:" + p.getSalary());
+			System.out.println("\tSalary:" + p.calculateSalary(professors));
 		}
 
 	}
