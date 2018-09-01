@@ -1,0 +1,49 @@
+<Employees>
+<Employee name='KING'>
+<reportees><Employee name='BLAKE'>
+<reportees><Employee name='ALLEN'>
+</Employee>
+</reportees>
+<reportees><Employee name='JAMES'>
+</Employee>
+</reportees>
+<reportees><Employee name='TURNER'>
+</Employee>
+</reportees>
+<reportees><Employee name='WARD'>
+</Employee>
+</reportees>
+<reportees><Employee name='MARTIN'>
+</Employee>
+</reportees>
+</Employee>
+</reportees>
+<reportees><Employee name='JONES'>
+<reportees><Employee name='SCOTT'>
+<reportees><Employee name='ADAMS'>
+</Employee>
+</reportees>
+</Employee>
+</reportees>
+<reportees><Employee name='FORD'>
+<reportees><Employee name='WILLIAM'>
+</Employee>
+</reportees>
+<reportees><Employee name='SMITH'>
+</Employee>
+</reportees>
+</Employee>
+</reportees>
+</Employee>
+</reportees>
+<reportees><Employee name='CLARK'>
+<reportees><Employee name='MILLER'>
+</Employee>
+</reportees>
+<reportees><Employee name='PATRICK'>
+</Employee>
+</reportees>
+</Employee>
+</reportees>
+</Employee>
+</Employees>
